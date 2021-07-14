@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(40, 25, 255, 0.418);
+      }
+
+        
+      .container{
+        width: 300px;
+        height: 400px;
+        margin-top: 150px;
+       
+
+        box-sizing: border-box;
+        background: rgba(230, 230, 230,0.8);
+
+        border-radius: 10%;
+      }
+      .person{
+        position: absolute;  
+        width: 100px;
+        height: 100px;
+        top: 100px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(96, 183, 255, 0.815);
+        border-radius: 50%;
+         
+        z-index: 10;
+        
+
+      }
+      .form-control{
+        margin-left: 15%;
+        width: 70%;
+      }
+      .name1{
+        position: relative;
+      }
+      .name1:before {
+        position: absolute;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f007";
+        font-size: 14px;
+        color: grey;
+        left: 47px;
+        top: 75%;
+        transform: translateY(-50%);
+      }
+      .password1{
+        position: relative;
+      }
+      .password1:before {
+        position: absolute;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f023";
+        font-size: 14px;
+        color: grey;
+        left: 47px;
+        top: 60%;
+        transform: translateY(-50%);
+      }
+      .btn{
+        width:70%
+      }
+      .font-sm{
+        font-size: 0.5rem;
+      }
+    </style>
+</head>
+<body>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <div class="person">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#000" class="" viewBox="0 0 16 16"z-index="10">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+      </svg>
+    </div>
+
+    <div class="container">
+
+      
+      <div class="row">
+          <div class="col mt-5">
+              <form >
+                <div class="form-group name1">                  
+                  <label for="exampleInputName1" class=" d-flex justify-content-center font-weight-bold">Sign In</label>
+                  <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="   User Name">
+                  <i class="glyphicon glyphicon-user form-control-feedback"></i>
+                </div>
+                <div class="form-group password1">
+                  <label for="exampleInputPassword1" class=" d-flex justify-content-center"></label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="   Password">
+                </div>
+                <div class="form-group d-flex justify-content-center" >
+                  <button type="submit" class="btn btn-primary">Login</button>
+                  
+                </div>
+                <div class="form-group form-check">
+                  <div class="col">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="top: 10px;">
+                    <label class="form-check-label" for="exampleCheck1 font-sm col-4">Remember me</label>
+                    <button type="submit" class="btn btn-link font-sm col-4">Forgot Password</button>
+                  </div>
+                </div>
+                
+              </div>
+              </form>
+          </div>
+        </div>
+    </div>
+
+    
+    
+<!-- 
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div> -->
+    
+</body>
+</html>
